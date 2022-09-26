@@ -1,0 +1,14 @@
+{
+  "extends": ["next", "plugin:prettier/recommended", "next/core-web-vitals"],
+  "parser": "@typescript-eslint/parser",
+
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+
+  "rules": {
+    "@next/next/no-img-element": "off",
+    "prettier/prettier": "off"
+  }
+}
