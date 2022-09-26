@@ -53,7 +53,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <link rel="shortcut icon" href="./images/icon.svg" type="image/svg" />
+          <link rel="shortcut icon" href="./images/logo.svg" type="image/svg" />
         </Head>
         <body>
           <Main />
