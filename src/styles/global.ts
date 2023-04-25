@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
+
     * {
       margin: 0;
       padding: 0;
@@ -8,15 +9,15 @@ const GlobalStyles = createGlobalStyle`
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       scroll-behavior: smooth;
+
     }
 
 
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-feature-settings: 'pnum' on, 'lnum' on;
 
       overflow-x: hidden;
-
       a{
         text-decoration: none;
       }
