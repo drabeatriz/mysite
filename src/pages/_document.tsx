@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-title-in-document-head */
 import React from 'react'
 import Document, {
@@ -100,6 +101,33 @@ export default class MyDocument extends Document {
             name="twitter:image"
             content="https://scontent.fpbq1-1.fna.fbcdn.net/v/t39.30808-6/299192897_5331178360335883_5245899706644090382_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=J_eHKE2ZHpAAX_VqsYN&_nc_oc=AQlnEwOtb7Oyw3Q7a1EZ-S3ScXdvcYoLaZPiLmn-vw3bBxmw_xlJLXShDFo9ppWFiBE&_nc_ht=scontent.fpbq1-1.fna&oh=00_AT8pF6eeZDYiWqUMm9H23x1tR_F_pojR9nzP3_PrKnf4eA&oe=63363F23"
           />
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '191331333750099');
+              fbq('track', 'PageView');
+
+      `
+            }}
+          />
+
+          <noscript>
+            <img
+              height="1"
+              width="1"
+              style={{ display: 'none' }}
+              src={`https://www.facebook.com/tr?id=191331333750099&ev=PageView&noscript=1`}
+            />
+          </noscript>
         </Head>
         <body>
           <Main />
