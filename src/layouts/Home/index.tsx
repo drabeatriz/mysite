@@ -8,7 +8,7 @@ function HomeLayout() {
       <a href="https://wa.me/5569984391965?text=VAGA+08+%7C+Ol%C3%A1+Dra.+Beatriz%2C+gostaria+de+marcar+meu+hor%C3%A1rio+para+fazer+meu+clareamento%21">
         <button>
           <img src="./images/clique.svg" alt="Icone Button Cliques" />
-          AGENDE AGORAS
+          AGENDE AGORA
         </button>
       </a>
     </S.Container>
