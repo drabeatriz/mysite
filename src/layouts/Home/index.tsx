@@ -4,23 +4,11 @@ import * as S from './styles'
 function HomeLayout() {
   return (
     <S.Container>
-      <header>
-        <p className="txt-header">
-          Restam apenas
-          <span> 3 Vagas </span>
-          para ver o conteúdo dessa página.
-        </p>
-      </header>
-
-      <img
-        src="./images/banner.webp"
-        alt="Sorriso Antes e depois de clareamento"
-      />
-
+      <img src="./images/odonto.png" alt="Logo dra beatriz" />
       <a href="https://wa.me/5569984391965?text=VAGA+08+%7C+Ol%C3%A1+Dra.+Beatriz%2C+gostaria+de+marcar+meu+hor%C3%A1rio+para+fazer+meu+clareamento%21">
         <button>
           <img src="./images/clique.svg" alt="Icone Button Cliques" />
-          AGENDAR AGORA
+          AGENDE AGORAS
         </button>
       </a>
     </S.Container>

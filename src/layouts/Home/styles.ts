@@ -3,9 +3,11 @@ import styled from 'styled-components'
 export const Container = styled.section`
   width: 100%;
   max-width: 720px;
+  height: 100vh;
 
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 
   margin: 0 auto;
@@ -15,54 +17,41 @@ export const Container = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
 
-  header {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+
     width: 100%;
-    background: #fe6983;
-    min-height: 64px;
+    height: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    pointer-events: none;
 
-    .txt-header {
-      width: 90%;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 120%;
+    top: 0;
+    left: 0;
+    z-index: 1;
 
-      text-align: center;
-
-      color: #ffffff;
-
-      padding: 12px 0;
-
-      span {
-        font-weight: 700;
-      }
-
-      @media screen and (max-width: 264px) {
-        font-size: 14px;
-      }
-      @media screen and (max-width: 164px) {
-        font-size: 12px;
-      }
-    }
+    background: rgba(0, 0, 0, 0.6);
   }
 
   img {
-    width: 100%;
+    width: 90%;
+    z-index: 99;
   }
 
   a {
+    z-index: 99;
     width: 90%;
   }
   button {
     margin: 50px 0 100px 0;
     width: 100%;
-    background: #fe6983;
+    background: #da989b;
     border: none;
     border-radius: 8px;
-
+    z-index: 99;
+    cursor: pointer;
     font-weight: 700;
     font-size: 18px;
     line-height: 120%;
